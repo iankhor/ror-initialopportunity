@@ -21,6 +21,9 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
+
+# gems added 
+gem 'bootstrap-sass', '~> 3.3.6'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'dotenv-rails', groups: [:development, :test]
 gem 'devise'
@@ -29,6 +32,7 @@ gem 'pg'
 gem 'simple_form'
 gem 'unicorn'
 gem 'unicorn-rails'
+
 group :development do
   gem 'better_errors'
   gem 'rails_layout'
