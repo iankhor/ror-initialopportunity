@@ -30,8 +30,14 @@
         <p class="navbar-text">Welcome to Initial Opportunity</p>
         <%#<button type="button" class="btn btn-default navbar-btn">Sign in</button>%>
 
-      <%= link_to 'Sign in', 
+        <%= link_to 'Sign in', 
                     new_user_session_path, 
+                    method: :get, 
+                    class: "btn btn-default navbar-btn" 
+        %>
+
+        <%= link_to 'Sign up', 
+                    new_user_registration_path, 
                     method: :get, 
                     class: "btn btn-default navbar-btn" 
         %>
