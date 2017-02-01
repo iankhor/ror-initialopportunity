@@ -10,10 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170201004253) do
+ActiveRecord::Schema.define(version: 20170201235642) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "onboardings", force: :cascade do |t|
+    t.string   "no_of_investment"
+    t.string   "is_SMSF"
+    t.string   "invest_location_preferences"
+    t.string   "stock_interest"
+    t.string   "transaction_timeframe"
+    t.string   "transaction_size"
+    t.string   "invitation_preference"
+    t.datetime "created_at",                  null: false
+    t.datetime "updated_at",                  null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false

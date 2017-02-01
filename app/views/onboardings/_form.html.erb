@@ -1,0 +1,17 @@
+<%= simple_form_for(@onboarding) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :no_of_investment %>
+    <%= f.input :is_SMSF %>
+    <%= f.input :invest_location_preferences %>
+    <%= f.input :stock_interest %>
+    <%= f.input :transaction_timeframe %>
+    <%= f.input :transaction_size %>
+    <%= f.input :invitation_preference %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

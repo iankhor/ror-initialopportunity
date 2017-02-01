@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  no_of_investment: MyString
+  is_SMSF: MyString
+  invest_location_preferences: MyString
+  stock_interest: MyString
+  transaction_timeframe: MyString
+  transaction_size: MyString
+  invitation_preference: MyString
+
+two:
+  no_of_investment: MyString
+  is_SMSF: MyString
+  invest_location_preferences: MyString
+  stock_interest: MyString
+  transaction_timeframe: MyString
+  transaction_size: MyString
+  invitation_preference: MyString

@@ -1,0 +1,2 @@
+json.extract! onboarding, :id, :no_of_investment, :is_SMSF, :invest_location_preferences, :stock_interest, :transaction_timeframe, :transaction_size, :invitation_preference, :created_at, :updated_at
+json.url onboarding_url(onboarding, format: :json)
