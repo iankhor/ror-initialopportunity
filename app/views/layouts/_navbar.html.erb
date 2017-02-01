@@ -16,7 +16,14 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-      <button type="button" class="btn btn-default navbar-btn">Sign in</button>
+
+      <% if user_signed_in? %>
+        <p class="navbar-text">Welcome back <%= current_user.email %></p>
+        <button type="button" class="btn btn-default navbar-btn">Sign out</button>
+      <% else  %>
+        <p class="navbar-text">Welcome to Initial Opportunity</p>
+        <button type="button" class="btn btn-default navbar-btn">Sign in</button>
+      <% end %>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
