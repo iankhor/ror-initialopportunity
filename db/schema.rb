@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 20170202003949) do
     t.string   "image_link"
     t.string   "desc"
     t.string   "development_name"
+    t.string   "is_displayed"
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false
   end

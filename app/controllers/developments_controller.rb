@@ -1,5 +1,6 @@
 class DevelopmentsController < ApplicationController
   before_action :set_development, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
 
   # GET /developments
   # GET /developments.json
