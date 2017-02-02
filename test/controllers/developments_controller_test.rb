@@ -17,7 +17,7 @@ class DevelopmentsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create development" do
     assert_difference('Development.count') do
-      post developments_url, params: { development: { desc: @development.desc, development_name: @development.development_name, image_link: @development.image_link } }
+      post developments_url, params: { development: { desc: @development.desc, development_name: @development.development_name, image_filename: @development.image_filename } }
     end
 
     assert_redirected_to development_url(Development.last)
@@ -34,7 +34,7 @@ class DevelopmentsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update development" do
-    patch development_url(@development), params: { development: { desc: @development.desc, development_name: @development.development_name, image_link: @development.image_link } }
+    patch development_url(@development), params: { development: { desc: @development.desc, development_name: @development.development_name, image_filename: @development.image_filename } }
     assert_redirected_to development_url(@development)
   end
 

@@ -70,6 +70,6 @@ class DevelopmentsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def development_params
-      params.require(:development).permit(:image_link, :desc, :development_name)
+      params.require(:development).permit(:image_filename, :desc, :development_name)
     end
 end
