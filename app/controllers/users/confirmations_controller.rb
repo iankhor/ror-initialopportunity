@@ -25,7 +25,7 @@ class Users::ConfirmationsController < Devise::ConfirmationsController
   def after_confirmation_path_for(resource_name, resource)
     super(resource_name, resource)
     sign_in(resource)
-    new_onboarding #redirect to onboading page !
+    new_onboarding_path #redirect to onboading page !
   end
 
 end
