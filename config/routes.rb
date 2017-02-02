@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :developments
   # resources :onboarding, controller: 'onboardings'
   resources :onboardings
   # root to: 'visitors#index'

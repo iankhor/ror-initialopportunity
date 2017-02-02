@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Image link:</strong>
+  <%= @development.image_link %>
+</p>
+
+<p>
+  <strong>Desc:</strong>
+  <%= @development.desc %>
+</p>
+
+<p>
+  <strong>Development name:</strong>
+  <%= @development.development_name %>
+</p>
+
+<%= link_to 'Edit', edit_development_path(@development) %> |
+<%= link_to 'Back', developments_path %>
