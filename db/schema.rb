@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 20170202003949) do
   enable_extension "plpgsql"
 
   create_table "developments", force: :cascade do |t|
-    t.string   "image_link"
+    t.string   "image_filename"
     t.string   "desc"
     t.string   "development_name"
     t.string   "is_displayed"

@@ -10,24 +10,61 @@ puts 'CREATED ADMIN USER: ' << user.email
 
 Development.create!([
     {
-        image_link:         'product',
+        image_filename:     'product',
         desc:               'Occaecat ex est id qui quis enim ullamco ipsum cupidatat. Occaecat aliquip duis officia deserunt duis. Aute elit eu aute voluptate dolor cillum consequat veniam voluptate reprehenderit deserunt veniam minim. Irure id qui qui ut ullamco laborum cillum enim. Duis dolor do                     sunt pariatur elit cillum laborum cillum dolore ipsum officia ad adipisicing ad. Commodo duis ea adipisicing in commodo sunt velit consectetur anim laboris non.',
         development_name:   'Voyager, Docklands',
         is_displayed:       'yes'            
     },
     
     {
-        image_link:         'product',
+        image_filename:     'product',
         desc:               'Occaecat ex est id qui quis enim ullamco ipsum cupidatat. Occaecat aliquip duis officia deserunt duis. Aute elit eu aute voluptate dolor cillum consequat veniam voluptate reprehenderit deserunt veniam minim. Irure id qui qui ut ullamco laborum cillum enim. Duis dolor do                     sunt pariatur elit cillum laborum cillum dolore ipsum officia ad adipisicing ad. Commodo duis ea adipisicing in commodo sunt velit consectetur anim laboris non.',
-        development_name:   'Voyager, Docklands',
+        development_name:   'Westin Hotel, Melbourne',
         is_displayed:       'yes'            
     },
 
     {
-        image_link:         'product',
+        image_filename:     'product',
         desc:               'Occaecat ex est id qui quis enim ullamco ipsum cupidatat. Occaecat aliquip duis officia deserunt duis. Aute elit eu aute voluptate dolor cillum consequat veniam voluptate reprehenderit deserunt veniam minim. Irure id qui qui ut ullamco laborum cillum enim. Duis dolor do                     sunt pariatur elit cillum laborum cillum dolore ipsum officia ad adipisicing ad. Commodo duis ea adipisicing in commodo sunt velit consectetur anim laboris non.',
-        development_name:   'Voyager, Docklands',
+        development_name:   'Police, Carlton',
         is_displayed:       'yes'            
     },
+
+    {
+        image_filename:     'product',
+        desc:               'Occaecat ex est id qui quis enim ullamco ipsum cupidatat. Occaecat aliquip duis officia deserunt duis. Aute elit eu aute voluptate dolor cillum consequat veniam voluptate reprehenderit deserunt veniam minim. Irure id qui qui ut ullamco laborum cillum enim. Duis dolor do                     sunt pariatur elit cillum laborum cillum dolore ipsum officia ad adipisicing ad. Commodo duis ea adipisicing in commodo sunt velit consectetur anim laboris non.',
+        development_name:   'Beer, More Beer',
+        is_displayed:       'yes'            
+    },
+
+    {
+        image_filename:     'product',
+        desc:               'Occaecat ex est id qui quis enim ullamco ipsum cupidatat. Occaecat aliquip duis officia deserunt duis. Aute elit eu aute voluptate dolor cillum consequat veniam voluptate reprehenderit deserunt veniam minim. Irure id qui qui ut ullamco laborum cillum enim. Duis dolor do                     sunt pariatur elit cillum laborum cillum dolore ipsum officia ad adipisicing ad. Commodo duis ea adipisicing in commodo sunt velit consectetur anim laboris non.',
+        development_name:   'Ryan, Lalaland',
+        is_displayed:       'yes'            
+    },
+
+    {
+        image_filename:     'product',
+        desc:               'Occaecat ex est id qui quis enim ullamco ipsum cupidatat. Occaecat aliquip duis officia deserunt duis. Aute elit eu aute voluptate dolor cillum consequat veniam voluptate reprehenderit deserunt veniam minim. Irure id qui qui ut ullamco laborum cillum enim. Duis dolor do                     sunt pariatur elit cillum laborum cillum dolore ipsum officia ad adipisicing ad. Commodo duis ea adipisicing in commodo sunt velit consectetur anim laboris non.',
+        development_name:   '123, Lego',
+        is_displayed:       'yes'            
+    },
+
+    {
+        image_filename:     'product',
+        desc:               'Occaecat ex est id qui quis enim ullamco ipsum cupidatat. Occaecat aliquip duis officia deserunt duis. Aute elit eu aute voluptate dolor cillum consequat veniam voluptate reprehenderit deserunt veniam minim. Irure id qui qui ut ullamco laborum cillum enim. Duis dolor do                     sunt pariatur elit cillum laborum cillum dolore ipsum officia ad adipisicing ad. Commodo duis ea adipisicing in commodo sunt velit consectetur anim laboris non.',
+        development_name:   'Mike, Gabe',
+        is_displayed:       'yes'            
+    },
+
+    {
+        image_filename:     'product',
+        desc:               'Occaecat ex est id qui quis enim ullamco ipsum cupidatat. Occaecat aliquip duis officia deserunt duis. Aute elit eu aute voluptate dolor cillum consequat veniam voluptate reprehenderit deserunt veniam minim. Irure id qui qui ut ullamco laborum cillum enim. Duis dolor do                     sunt pariatur elit cillum laborum cillum dolore ipsum officia ad adipisicing ad. Commodo duis ea adipisicing in commodo sunt velit consectetur anim laboris non.',
+        development_name:   'Aviel, Goh',
+        is_displayed:       'no'            
+    },
+
+    
     
 ])
