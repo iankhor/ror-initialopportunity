@@ -1,32 +1,20 @@
-<div class="jumbotron">
-  <div class="container">
-    <h1>Initial Opportunity</h1>
-    <p>Nostrud officia quis nulla sunt quis officia irure adipisicing. Tempor consectetur excepteur magna aliqua veniam. Aliqua fugiat duis et mollit occaecat culpa proident esse fugiat.</p>
-    <p><a class="btn btn-primary btn-lg" href="#" role="button">Act fast</a></p>
-  </div>
-</div>
 
-<div class="row">
-    <p class="center dev-border"> Imagine there is some content here, pending Simon's design</p>
-</div> 
+<!-- Hero image and sign up-->
+<%= render 'body_one' %>
 
-<div class="row">
+<!-- Process of First Chance and Download brochure-->
+<%= render 'body_two' %>
 
-<% @developments.each_with_index do |development| %>
+<!-- Pre-market opportunities-->
+<%= render 'body_three' %>
 
-    <% if development.is_displayed == 'yes'%>
-      <div class="col-sm-6 col-md-4">
-        <div class="thumbnail">
-          <%= link_to image_tag(development.image_filename), development %>
-          <div class="caption">
-            <h3><%= development.development_name%></h3>
-            <p><%= development.desc%></p>
-            <p><a href="#" class="btn btn-primary" role="button">Download brochure</a> <a href="#" class="btn btn-default" role="button">Request a callback</a></p>
-        </div> <!-- class caption-->
-      </div> <!--  class thumnail-->
-  </div> <!--  class col-->
-      
-    <% end %>
-<% end %>
+<!-- On-market opportunities-->
+<%= render 'body_four' %>
 
-</div>
+<!-- Placeholder - Quote -->
+<%= render 'body_five' %>
+
+<!-- Placeholder - Quote + Sign up button -->
+<%= render 'body_six' %>
+
+
