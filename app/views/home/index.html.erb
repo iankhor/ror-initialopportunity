@@ -13,7 +13,7 @@
     <% if development.is_displayed == 'yes'%>
       <div class="col-sm-6 col-md-4">
         <div class="thumbnail">
-          <%= image_tag(development.image_filename) %>
+          <%= link_to image_tag(development.image_filename), development %>
           <div class="caption">
             <h3><%= development.development_name%></h3>
             <p><%= development.desc%></p>

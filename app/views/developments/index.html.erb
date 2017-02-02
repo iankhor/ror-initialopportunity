@@ -5,6 +5,7 @@
 <table>
   <thead>
     <tr>
+      <th>Development ID</th>
       <th>Image link</th>
       <th>Desc</th>
       <th>Development name</th>
@@ -16,6 +17,7 @@
   <tbody>
     <% @developments.each do |development| %>
       <tr>
+        <td><%= development.id %></td>
         <td><%= development.image_filename %></td>
         <td><%= development.desc %></td>
         <td><%= development.development_name %></td>
