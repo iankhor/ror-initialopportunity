@@ -15,7 +15,6 @@ class OnboardingsController < ApplicationController
   # GET /onboardings/new
   def new
     @onboarding = Onboarding.new
-    @onboarding.email = current_user.email
   end
 
   # GET /onboardings/1/edit
