@@ -1,6 +1,7 @@
 class CreateOnboardings < ActiveRecord::Migration[5.0]
   def change
     create_table :onboardings do |t|
+      t.string :email
       t.string :no_of_investment
       t.string :is_SMSF
       t.string :invest_location_preferences

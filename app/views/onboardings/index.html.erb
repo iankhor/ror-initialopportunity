@@ -5,6 +5,7 @@
 <table>
   <thead>
     <tr>
+      <th>Email</th>
       <th>No of investment</th>
       <th>Is smsf</th>
       <th>Invest location preferences</th>
@@ -19,6 +20,8 @@
   <tbody>
     <% @onboardings.each do |onboarding| %>
       <tr>
+        <td><%= onboarding.email %></td>
+        <td><%= onboarding.no_of_investment %></td>
         <td><%= onboarding.no_of_investment %></td>
         <td><%= onboarding.is_SMSF %></td>
         <td><%= onboarding.invest_location_preferences %></td>

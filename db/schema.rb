@@ -16,6 +16,7 @@ ActiveRecord::Schema.define(version: 20170201235642) do
   enable_extension "plpgsql"
 
   create_table "onboardings", force: :cascade do |t|
+    t.string   "email"
     t.string   "no_of_investment"
     t.string   "is_SMSF"
     t.string   "invest_location_preferences"
