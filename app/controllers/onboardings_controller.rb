@@ -1,5 +1,6 @@
 class OnboardingsController < ApplicationController
   before_action :set_onboarding, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
 
   # GET /onboardings
   # GET /onboardings.json
