@@ -1,5 +1,10 @@
 <%= f.hidden_field :current_step, value: f.object.current_step %>
 
+<h1> debug </h1>
+<p> step : <%= f.object.current_step %> </p>
+<p> first step : <%= f.object.first_step? %> </p>
+<p> last step : <%= f.object.last_step? %> </p>
+
 <%= render "onboardings/steps/page#{f.object.current_step + 1}", f: f %>
 
 <div class="field">

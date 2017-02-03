@@ -15,8 +15,8 @@ class OnboardingsController < ApplicationController
     @onboarding = @wizard.object
 
     # old code before model_wizard 
-    @onboarding = Onboarding.new
-    @onboarding.email = current_user.email
+    # @onboarding = Onboarding.new
+    # @onboarding.email = current_user.email
   end
 
   def edit
@@ -25,7 +25,7 @@ class OnboardingsController < ApplicationController
 
   def create
 
-    @wizard = ModelWizard.new(Onboarding, session, params, product_params).continue
+    @wizard = ModelWizard.new(Onboarding, session, params, onboarding_params).continue
     @onboarding = @wizard.object
 
     respond_to do |format|
@@ -56,7 +56,7 @@ class OnboardingsController < ApplicationController
   # PATCH/PUT /onboardings/1
   # PATCH/PUT /onboardings/1.json
   def update
-    @wizard = ModelWizard.new(onboarding, session, params, product_params).continue
+    @wizard = ModelWizard.new(@onboarding, session, params, onboarding_params).continue
     @onboarding = @wizard.object
 
     respond_to do |format|
@@ -99,7 +99,8 @@ class OnboardingsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def onboarding_params
-      params.require(:onboarding).permit(:email,
+      params.require(:onboarding).permit(:current_step,
+                                         :email,
                                          :no_of_investment, 
                                          :is_SMSF, 
                                          :invest_location_preferences, 
