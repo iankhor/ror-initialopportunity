@@ -2,17 +2,14 @@
   <%= f.error_notification %>
 
   <div class="form-inputs">
-    <%= f.hidden_field :email, input_html: { id: 'email', value: @onboarding.email} %>
-    <%= f.input :no_of_investment %>
-    <%= f.input :is_SMSF %>
-    <%= f.input :invest_location_preferences %>
-    <%= f.input :stock_interest %>
-    <%= f.input :transaction_timeframe %>
-    <%= f.input :transaction_size %>
-    <%= f.input :invitation_preference %>
-  </div>
 
-  <div class="form-actions">
-    <%= f.button :submit %>
+  <%= if params[:all].nil? %>
+      <%= render 'onboardings/steps/current_step', f: f %>
+  <% else %>
+      <%= render 'onboardings/steps/all_steps', f: f %>
+  <% end %>
+
   </div>
 <% end %>
+
+
