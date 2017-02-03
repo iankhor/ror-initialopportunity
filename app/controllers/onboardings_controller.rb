@@ -14,9 +14,6 @@ class OnboardingsController < ApplicationController
     @wizard = ModelWizard.new(Onboarding, session, params).start
     @onboarding = @wizard.object
 
-    # old code before model_wizard 
-    # @onboarding = Onboarding.new
-    # @onboarding.email = current_user.email
   end
 
   def edit
@@ -37,20 +34,6 @@ class OnboardingsController < ApplicationController
             format.json { render json: @onboarding.errors, status: :unprocessable_entity }
           end
     end
-
-
-    # old code before model_wizard 
-    # @onboarding = Onboarding.new(onboarding_params)
-
-    # respond_to do |format|
-    #   if @onboarding.save
-    #     format.html { redirect_to @onboarding, notice: 'Onboarding was successfully created.' }
-    #     format.json { render :show, status: :created, location: @onboarding }
-    #   else
-    #     format.html { render :new }
-    #     format.json { render json: @onboarding.errors, status: :unprocessable_entity }
-    #   end
-    # end
   end
 
   # PATCH/PUT /onboardings/1
@@ -69,20 +52,8 @@ class OnboardingsController < ApplicationController
       end
     end
 
-    # old code before model_wizard 
-    # respond_to do |format|
-    #   if @onboarding.update(onboarding_params)
-    #     format.html { redirect_to @onboarding, notice: 'Onboarding was successfully updated.' }
-    #     format.json { render :show, status: :ok, location: @onboarding }
-    #   else
-    #     format.html { render :edit }
-    #     format.json { render json: @onboarding.errors, status: :unprocessable_entity }
-    #   end
-    # end
   end
 
-  # DELETE /onboardings/1
-  # DELETE /onboardings/1.json
   def destroy
     @onboarding.destroy
     respond_to do |format|
