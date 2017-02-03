@@ -3,7 +3,7 @@
 
   <div class="form-inputs">
 
-  <%= if params[:all].nil? %>
+  <% if params[:all].nil? %>
       <%= render 'onboardings/steps/current_step', f: f %>
   <% else %>
       <%= render 'onboardings/steps/all_steps', f: f %>

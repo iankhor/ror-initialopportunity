@@ -25,7 +25,7 @@ class OnboardingsController < ApplicationController
 
   def create
 
-    @wizard = model_wizard.new(Onboarding, session, params, product_params).continue
+    @wizard = ModelWizard.new(Onboarding, session, params, product_params).continue
     @onboarding = @wizard.object
 
     respond_to do |format|
