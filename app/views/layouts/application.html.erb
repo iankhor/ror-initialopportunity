@@ -18,11 +18,20 @@
   <script>
           var map;
           function initMap() {
+            var development_location = {lat: -34.397, lng: 150.644};
             map = new google.maps.Map(document.getElementById('map'), {
-              center: {lat: -34.397, lng: 150.644},
-              zoom: 8,
+              center: development_location,
+              zoom: 10,
               scrollwheel: false
             });
+
+            var marker = new google.maps.Marker({
+              position: development_location,
+              map: map
+            });
+
+            
+            
           }
   </script>
 
