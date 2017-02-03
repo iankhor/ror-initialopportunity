@@ -99,6 +99,13 @@ class OnboardingsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def onboarding_params
-      params.require(:onboarding).permit(:email, :no_of_investment, :is_SMSF, :invest_location_preferences, :stock_interest, :transaction_timeframe, :transaction_size, :invitation_preference)
+      params.require(:onboarding).permit(:email,
+                                         :no_of_investment, 
+                                         :is_SMSF, 
+                                         :invest_location_preferences, 
+                                         :stock_interest, 
+                                         :transaction_timeframe, 
+                                         :transaction_size, 
+                                         :invitation_preference)
     end
 end
