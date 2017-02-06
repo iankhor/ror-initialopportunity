@@ -20,14 +20,14 @@ Development.create!([
         image_filename:     'product2',
         desc:               'Occaecat ex est id qui quis enim ullamco ipsum cupidatat. Occaecat aliquip duis officia deserunt duis. Aute elit eu aute voluptate dolor cillum consequat veniam voluptate reprehenderit deserunt veniam minim. Irure id qui qui ut ullamco laborum cillum enim. Duis dolor do                     sunt pariatur elit cillum laborum cillum dolore ipsum officia ad adipisicing ad. Commodo duis ea adipisicing in commodo sunt velit consectetur anim laboris non.',
         development_name:   'Westin Hotel, Melbourne',
-        is_displayed:       'yes'            
+        is_displayed:       'no'            
     },
 
     {
         image_filename:     'product',
         desc:               'Occaecat ex est id qui quis enim ullamco ipsum cupidatat. Occaecat aliquip duis officia deserunt duis. Aute elit eu aute voluptate dolor cillum consequat veniam voluptate reprehenderit deserunt veniam minim. Irure id qui qui ut ullamco laborum cillum enim. Duis dolor do                     sunt pariatur elit cillum laborum cillum dolore ipsum officia ad adipisicing ad. Commodo duis ea adipisicing in commodo sunt velit consectetur anim laboris non.',
         development_name:   'Police, Carlton',
-        is_displayed:       'yes'            
+        is_displayed:       'no'            
     },
 
     {
@@ -48,14 +48,14 @@ Development.create!([
         image_filename:     'product2',
         desc:               'Occaecat ex est id qui quis enim ullamco ipsum cupidatat. Occaecat aliquip duis officia deserunt duis. Aute elit eu aute voluptate dolor cillum consequat veniam voluptate reprehenderit deserunt veniam minim. Irure id qui qui ut ullamco laborum cillum enim. Duis dolor do                     sunt pariatur elit cillum laborum cillum dolore ipsum officia ad adipisicing ad. Commodo duis ea adipisicing in commodo sunt velit consectetur anim laboris non.',
         development_name:   '123, Lego',
-        is_displayed:       'yes'            
+        is_displayed:       'no'            
     },
 
     {
         image_filename:     'product',
         desc:               'Occaecat ex est id qui quis enim ullamco ipsum cupidatat. Occaecat aliquip duis officia deserunt duis. Aute elit eu aute voluptate dolor cillum consequat veniam voluptate reprehenderit deserunt veniam minim. Irure id qui qui ut ullamco laborum cillum enim. Duis dolor do                     sunt pariatur elit cillum laborum cillum dolore ipsum officia ad adipisicing ad. Commodo duis ea adipisicing in commodo sunt velit consectetur anim laboris non.',
         development_name:   'Mike, Gabe',
-        is_displayed:       'yes'            
+        is_displayed:       'no'            
     },
 
     {
