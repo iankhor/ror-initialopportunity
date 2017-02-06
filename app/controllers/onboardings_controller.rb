@@ -27,6 +27,7 @@ class OnboardingsController < ApplicationController
 
     @wizard = ModelWizard.new(Onboarding, session, params, onboarding_params).continue
     @onboarding = @wizard.object
+    @onboarding.email = current_user.email
 
     respond_to do |format|
           if @wizard.save
