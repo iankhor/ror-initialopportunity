@@ -4,5 +4,5 @@
 
 <div class="field">
   <%= f.submit "Back", name: "back_button" unless f.object.first_step? %>
-  <%= f.submit f.object.last_step? ? nil: "Next" %>
+  <%= f.submit f.object.last_step? ? nil: "Continue" %>
 </div>

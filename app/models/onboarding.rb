@@ -7,7 +7,8 @@ class Onboarding < ApplicationRecord
   include MultiStepModel
 
   def self.total_steps
-    3
+    # 4 steps excluding submit
+    4
   end
 
 
