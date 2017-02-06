@@ -2,6 +2,9 @@ class OnboardingsController < ApplicationController
   before_action :set_onboarding, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!
 
+  # custom layout
+  layout 'onboarding'
+
   def index
     @onboardings = Onboarding.all
   end
