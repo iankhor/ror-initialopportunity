@@ -7,12 +7,10 @@
     <tr>
       <th>Email</th>
       <th>No of investment</th>
-      <th>Is smsf</th>
-      <th>Invest location preferences</th>
       <th>Stock interest</th>
       <th>Transaction timeframe</th>
       <th>Transaction size</th>
-      <th>Invitation preference</th>
+      <th>Invest location preferences</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -22,13 +20,11 @@
       <tr>
         <td><%= onboarding.email %></td>
         <td><%= onboarding.no_of_investment %></td>
-        <td><%= onboarding.no_of_investment %></td>
-        <td><%= onboarding.is_SMSF %></td>
         <td><%= onboarding.invest_location_preferences %></td>
         <td><%= onboarding.stock_interest %></td>
         <td><%= onboarding.transaction_timeframe %></td>
         <td><%= onboarding.transaction_size %></td>
-        <td><%= onboarding.invitation_preference %></td>
+        <td><%= onboarding.invest_location_preferences %></td>
         <td><%= link_to 'Show', onboarding %></td>
         <td><%= link_to 'Edit', edit_onboarding_path(onboarding) %></td>
         <td><%= link_to 'Destroy', onboarding, method: :delete, data: { confirm: 'Are you sure?' } %></td>

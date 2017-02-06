@@ -8,7 +8,7 @@ class Onboarding < ApplicationRecord
 
   def self.total_steps
     # 4 steps excluding submit
-    4
+    5
   end
 
 
