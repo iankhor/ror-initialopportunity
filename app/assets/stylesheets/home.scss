@@ -7,8 +7,16 @@
   margin: auto 0;
 }
 
+.dev-header {
+  height: 400px;
+}
+
+.dev-border-vanilla {
+  border: 1px solid #000;
+}
+
 .dev-border {
   border: 1px solid #000;
-  height: 300px;
   font-size: 200%;
+  height: 400px;
 }
