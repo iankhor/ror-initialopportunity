@@ -1,18 +1,19 @@
-<p> First off, tell us about your current investment portfolio. </p>
-
-<%= f.hidden_field :email, input_html: { id: 'email', value: @onboarding.email} %>
+<p> Next, your investment preferences help us show you the best opportunities</p>
 
 <p><%= 
-      f.input :no_of_investment, 
-      collection: ['0','1','2','3','4+'], 
+      f.input :transaction_timeframe, 
+      collection: ['Now',
+                   '1-3 Months',
+                   '3-6 Months'], 
       as: :radio_buttons 
 %></p>
 
 <p><%= 
-      f.input :stock_interest, 
-      collection: ['Apartments',
-                   'Townhouses',
-                   'Land',
-                   'Commercial'], 
+      f.input :transaction_size, 
+      collection: ['Up to $400K',
+                   'Up to $600K',
+                   'Up to $800K',
+                   'Up to $1M',
+                   '$1M+'], 
       as: :radio_buttons 
 %></p>

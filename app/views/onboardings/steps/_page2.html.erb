@@ -1,5 +1,18 @@
 <p> First off, tell us about your current investment portfolio. </p>
 
 <%= f.hidden_field :email, input_html: { id: 'email', value: @onboarding.email} %>
-<p><%= f.input :no_of_investment, collection: ['0','1','2','3','4+'], as: :radio_buttons %></p>
-<%= f.input :stock_interest, collection: ['Apartments','Townhouses','Land','Commercial'], as: :radio_buttons%>
+
+<p><%= 
+      f.input :no_of_investment, 
+      collection: ['0','1','2','3','4+'], 
+      as: :radio_buttons 
+%></p>
+
+<p><%= 
+      f.input :stock_interest, 
+      collection: ['Apartments',
+                   'Townhouses',
+                   'Land',
+                   'Commercial'], 
+      as: :radio_buttons 
+%></p>
