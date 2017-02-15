@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  email: MyString
+  project_id: MyString
+  download_brochure_timestamp: MyString
+  callback_timestamp: MyString
+
+two:
+  email: MyString
+  project_id: MyString
+  download_brochure_timestamp: MyString
+  callback_timestamp: MyString

@@ -1,0 +1,15 @@
+<%= simple_form_for(@development) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :image_filename %>
+    <%= f.input :desc %>
+    <%= f.input :development_name %>
+    <%= f.input :is_displayed %>
+    <%= f.input :development_type %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

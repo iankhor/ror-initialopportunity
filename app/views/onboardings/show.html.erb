@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>email</strong>
+  <%= @onboarding.email %>
+</p>
+
+<p>
+  <strong>No of investment:</strong>
+  <%= @onboarding.no_of_investment %>
+</p>
+
+<p>
+  <strong>Stock interest:</strong>
+  <%= @onboarding.stock_interest %>
+</p>
+
+<p>
+  <strong>Transaction timeframe:</strong>
+  <%= @onboarding.transaction_timeframe %>
+</p>
+
+<p>
+  <strong>Transaction size:</strong>
+  <%= @onboarding.transaction_size %>
+</p>
+
+<p>
+  <strong>Invest location preferences:</strong>
+  <%= @onboarding.invest_location_preferences %>
+</p>
+
+<%= link_to 'Edit', edit_onboarding_path(@onboarding) %> |
+<%= link_to 'Back', onboardings_path %>

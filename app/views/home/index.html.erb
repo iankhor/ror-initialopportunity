@@ -1,0 +1,23 @@
+<!-- Hero image and sign up-->
+<%= user_signed_in? ? render('main_header_current_user') : render('main_header_new_user') %>
+
+<!-- Process of First Chance -->
+<%= render 'process' unless user_signed_in? %>
+
+<!-- Download your free guide -->
+<%= render 'free_guide' if user_signed_in? %>
+<%= render 'test' %>
+
+<!-- Pre-market opportunities-->
+<%= render 'pre_market' %>
+
+<!-- On-market opportunities-->
+<%= render 'on_market' %>
+
+<!-- Placeholder - Quote -->
+<%#= render 'testimonial' unless user_signed_in? %>
+
+<!-- Placeholder - Quote + Sign up -->
+<%#= render 'quote_sign_up' unless user_signed_in? %>
+
+

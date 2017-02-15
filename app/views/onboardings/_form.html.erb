@@ -1,0 +1,21 @@
+<%= simple_form_for(@onboarding) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+
+  <% if params[:all].nil? %>
+      <%= render 'onboardings/steps/current_step', f: f %>
+  <% else %>
+      <%= render 'onboardings/steps/all_steps', f: f %>
+  <% end %>
+
+  </div>
+
+  <p>DEBUG</p>
+  <p>f.object.current_step: <%= f.object.current_step %></p>
+  <p>f.object.first_step?: <%= f.object.first_step? %></p>
+  <p>f.object.last_step?: <%= f.object.last_step? %></p>
+
+  
+<% end %>
+

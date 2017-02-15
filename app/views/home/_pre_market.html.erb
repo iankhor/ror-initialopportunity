@@ -1,0 +1,21 @@
+<div class="row">
+<h1>Pre-market opportunities</h1>
+<% @developments.each_with_index do |development| %>
+
+    <% if development.is_displayed == 'yes' and development.development_type == 'pre-market'%>
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <%= link_to image_tag(development.image_filename), development %>
+          <div class="caption">
+            <h3><%= development.development_name%></h3>
+            <p><%= development.desc%></p>
+            <p><a href="#" class="btn btn-primary" role="button">Download brochure</a> <a href="#" class="btn btn-default" role="button">Request a callback</a></p>
+        </div> <!-- class caption-->
+      </div> <!--  class thumnail-->
+  </div> <!--  class col-->
+      
+    <% end %> <!-- if statement -->
+<% end %> <!-- loop -->
+
+</div> <!-- row -->
+

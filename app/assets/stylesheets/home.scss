@@ -1,0 +1,71 @@
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.dev-dummylanding {
+  width: 100%;
+  height: 100vh
+}
+
+.dev-parent {
+  position: relative;
+}
+
+.dev-child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.dev-height {
+  height: 300px;
+}
+
+.dev-blue {
+  background-color: blue;
+  height: 300px;
+  width: 200px;
+}
+.dev-pink {
+  background-color: pink;
+  height: 500px;
+  width: 200px;
+}
+
+.dev-footer {
+  background-color: #7c7f84;
+}
+
+.center {
+  text-align: center;
+  margin: auto 0;
+}
+
+.dev-background {
+  background-color : #a9bad6
+}
+
+.dev-header {
+  height: 50vh;
+}
+
+.dev-border-vanilla {
+  border: 1px solid #000;
+}
+
+.dev-header-border {
+  border: 1px solid #000;
+  height: 50vh;
+}
+
+.dev-border {
+  border: 1px solid #000;
+  font-size: 200%;
+  height: 400px;
+}
+
+.process-thumbnail {
+    border-radius:50%;
+    overflow:hidden;
+}

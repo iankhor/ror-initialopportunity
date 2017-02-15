@@ -1,0 +1,19 @@
+<p> Next, your investment preferences help us show you the best opportunities</p>
+
+<p><%= 
+      f.input :transaction_timeframe, 
+      collection: ['Now',
+                   '1-3 Months',
+                   '3-6 Months'], 
+      as: :radio_buttons 
+%></p>
+
+<p><%= 
+      f.input :transaction_size, 
+      collection: ['Up to $400K',
+                   'Up to $600K',
+                   'Up to $800K',
+                   'Up to $1M',
+                   '$1M+'], 
+      as: :radio_buttons 
+%></p>

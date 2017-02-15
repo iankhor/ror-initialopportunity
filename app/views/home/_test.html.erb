@@ -1,0 +1,23 @@
+<%#<div class="row">
+  <div class="dev-pink col-sm-2">col-sm-8</div>
+  <div class="dev-blue col-sm-2">col-sm-4</div>
+  <div class="dev-pink col-sm-2">col-sm-8</div>
+  <div class="dev-blue col-sm-2">col-sm-4</div>
+  <div class="dev-pink col-sm-2">col-sm-8</div>
+  <div class="dev-blue col-sm-2">col-sm-4</div>
+</div>%>
+
+<%#= link_to "Download Brochure", download_path(format: 'pdf')  %>
+
+
+<div class="container-fluid dev-background">
+  <div class="row">
+        <div class="col-sm-6"></div>
+            <%= link_to 'Request callback', 
+                track_clicks_path(item: 'callback_clicked'),
+                method: :post , 
+                class: "btn btn-primary btn-large"
+            %>
+        </div> <!-- col-wrapper -->
+  </div> <!-- row -->
+</div>

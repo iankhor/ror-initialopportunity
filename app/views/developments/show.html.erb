@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+<%= image_tag(@development.image_filename) %>
+</p>
+
+<p>
+  <strong>Image link:</strong>
+  <%= @development.image_filename %>
+</p>
+
+<p>
+  <strong>Desc:</strong>
+  <%= @development.desc %>
+</p>
+
+<p>
+  <strong>Development name:</strong>
+  <%= @development.development_name %>
+</p>
+
+<p>
+  <strong>Development is displayed:</strong>
+  <%= @development.is_displayed %>
+</p>
+
+<p>
+  <strong>Development type</strong>
+  <%= @development.development_type %>
+</p>
+
+
+<div class="row">
+
+ <div id="map">MAP HERE</div>
+
+</div> <!-- row -->
+
+<%= link_to 'Edit', edit_development_path(@development) %> |
+<%= link_to 'Back', developments_path %>

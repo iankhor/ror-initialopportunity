@@ -1,0 +1,25 @@
+    <h1>Sign up for free</h1>
+    <p>Don't miss out. Join firstchance.com.au to access real estate, before it hits the market</p>
+
+    <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), :validate => true  ) do |f| %>
+    <%= devise_error_messages! %>
+
+
+      <%= f.input :first_name, autofocus: true, validate: true, label: false, placeholder: 'First name'%>
+      <%= f.input :last_name, autofocus: true, validate: true, label: false, placeholder: 'Last name' %>
+      <%= f.input :phone_number, autofocus: true, validate: true, label: false, placeholder: 'Phone number' %>
+      <%= f.input :email, autofocus: true, validate: true, label: false, placeholder: 'Email address' %>
+    
+      <% if @minimum_password_length %>
+        <em>(<%= @minimum_password_length %> characters minimum)</em>
+      <% end %>
+      <%= f.input :password, autocomplete: "off", label: false, placeholder: 'Password'%>
+
+      <p>By signing up you are agreeing to the <%= link_to 'term & conditions', root_path %></p>
+
+
+      <%= f.button :submit,  "Create account" %>
+      
+    <p>or <%= link_to 'sign in', new_user_session_path %> </p>
+  <% end %>
+

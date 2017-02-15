@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @analytic.email %>
+</p>
+
+<p>
+  <strong>Project:</strong>
+  <%= @analytic.project_id %>
+</p>
+
+<p>
+  <strong>Download brochure timestamp:</strong>
+  <%= @analytic.download_brochure_timestamp %>
+</p>
+
+<p>
+  <strong>Callback timestamp:</strong>
+  <%= @analytic.callback_timestamp %>
+</p>
+
+<%= link_to 'Edit', edit_analytic_path(@analytic) %> |
+<%= link_to 'Back', analytics_path %>
